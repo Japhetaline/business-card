@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+body {
+  background-color: #23252C;
+  font-family: 'inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.container {
   align-items: center;
+  padding: 100px 100px;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 44px 0px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+
+.content {
+  background-color: #1A1B21;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid #1A1B21;
 }
 
-.App-link {
-  color: #61dafb;
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title {
+  font-weight: 400;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+  color: #F3BF99;
+}
+
+.website {
+  font-size: 10.24px;
+  line-height: 150%;
+  text-align: center;
+  color: #F5F5F5;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.email {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 30px 4px 30px;
+  gap: 8px;
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.LinkedIn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 30px 9px 30px;
+  gap: 8px;
+  background: #5093E2;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.about>h1,
+.interest>h1 {
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #F5F5F5;
+}
+
+.about>p,
+.interest>p {
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #DCDCDC;
+}
+
+.footer {
+  background: #161619;
+  border-radius: 0px 0px 10px 10px;
+  padding: 20px 70px 5px 70px;
+  align-items: center;
+}
+
+.footer>i {
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px 15px 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .social {
+    display: inline;
   }
-  to {
-    transform: rotate(360deg);
+
+  .email {
+    margin-bottom: 10px;
   }
 }
